@@ -1,5 +1,6 @@
 # youngs-bakery
-![KakaoTalk_20231228_154525225](https://github.com/marrron/youngs-bakery/assets/112460285/7c9ae998-5536-407b-834e-4f54ea832fa2)
+![Uploading 캡처.PNG…]()
+
 
 
 #### 커밋 타입
