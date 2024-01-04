@@ -1,0 +1,38 @@
+.calculator {
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.button-wrap {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	border-collapse: collapse;
+}
+.clear {
+	grid-column: 1/4;
+	background-color: #ccc;
+}
+.zero {
+	grid-column: 1/4;
+}
+input {
+	width: 292px;
+	height: 70px;
+	background-color: #333;
+	color: white;
+	font-size: 30px;
+	text-align: right;
+	font-weight: 600;
+}
+button {
+	border: 1px solid #999998;
+	height: 70px;
+	font-size: 30px;
+	font-weight: 600;
+}
+button:hover {
+	opacity: 0.6;
+}
+.operator {
+	background-color: #ffa500;
+}
