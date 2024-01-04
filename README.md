@@ -1,5 +1,6 @@
 # youngs-bakery
-![Uploading 캡처.PNG…]()
+![캡처](https://github.com/marrron/youngs-bakery/assets/112460285/796eeb3a-fbea-40f2-9d89-34c03de54707)
+
 
 
 
