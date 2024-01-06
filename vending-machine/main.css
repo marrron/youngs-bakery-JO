@@ -1,5 +1,9 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: #ffd2b9;
+	font-family: Noto Sans KR;
 }
 h1 > img {
 	width: 434px;
@@ -12,8 +16,8 @@ h1 > img {
 	justify-content: center;
 }
 .vending-machine {
-	width: 306px;
-	height: 490px;
+	width: 326px;
+	height: 510px;
 	background-color: #3f3f3f;
 	border-radius: 10px;
 }
@@ -24,8 +28,7 @@ h1 > img {
 	background-color: #a59b9b;
 	border: 10px solid #3f3f3f;
 	border-radius: 10px;
-	box-sizing: border-box;
-	padding: 18px 17px 17px 17px;
+	padding: 8px 7px 7px 7px;
 }
 .wallet {
 	width: 360px;
@@ -34,7 +37,6 @@ h1 > img {
 	margin-bottom: 20px;
 	border-radius: 10px;
 	padding: 9px 27px;
-	box-sizing: border-box;
 }
 .my-bag {
 	width: 360px;
