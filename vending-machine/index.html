@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>vending-machine</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<header class="title">
+			<h1><img src="src/logo.png" alt="" /></h1>
+		</header>
+		<main class="wrapper">
+			<div class="left-side">
+				<div class="vending-machine">
+					<div class="menu-list">
+						<ul class="cola-list">
+							<li>Original_Cola</li>
+							<li>Violet_Cola</li>
+							<li>Yellow_Cola</li>
+							<li>Cool_Cola</li>
+							<li>Green_Cola</li>
+							<li>Orange_Cola</li>
+						</ul>
+					</div>
+					<div class="balance">
+						<p>잔액: 1,000원</p>
+						<button>거스름돈 반환</button>
+					</div>
+					<div class="deposit">
+						<input type="number" placeholder="입금액 입력" />
+						<button>입금</button>
+					</div>
+					<div class="earning">
+						<ul></ul>
+						<button>획득</button>
+					</div>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="wallet">
+					<div class="my-money">
+						소지금:
+						<span>25,000원</span>
+					</div>
+				</div>
+				<div class="my-bag">
+					획득한 음료
+					<ul class="purchased-drinks"></ul>
+					<span>총금액: 9,000원</span>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
