@@ -1,9 +1,9 @@
 * {
 	box-sizing: border-box;
+	font-family: "Noto Sans KR", sans-serif;
 }
 body {
 	background-color: #ffd2b9;
-	font-family: Noto Sans KR;
 }
 h1 > img {
 	width: 434px;
@@ -20,6 +20,7 @@ h1 > img {
 	height: 510px;
 	background-color: #3f3f3f;
 	border-radius: 10px;
+	padding-top: 13px;
 }
 .left-side {
 	margin-right: 28px;
@@ -51,4 +52,70 @@ h1 > img {
 	background-color: #ffd2b9;
 }
 .purchased-drinks {
+}
+.list-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.list-cola {
+	background-color: white;
+	width: 94px;
+	height: 130px;
+	border-radius: 10px;
+	margin-bottom: 12px;
+	padding-bottom: 9px;
+}
+.list-cola:hover {
+	outline: solid 3px #ff7d35;
+}
+.btn-cola {
+	width: 94px;
+	height: 130px;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+}
+.cola-name {
+	font-size: 11px;
+	text-align: center;
+	display: block;
+	margin: 3px 0 7px 0;
+	font-weight: 500;
+}
+.img-cola {
+	width: 36px;
+	height: 65px;
+	margin: 0px 29px 0px 29px;
+}
+.cola-price {
+	display: block;
+	width: 70px;
+	height: 22px;
+	background-color: #ff7d35;
+	color: white;
+	border-radius: 10px;
+	margin: 0 auto;
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 500;
+}
+.btn-cola.sold-out::before {
+	width: 94px;
+	height: 130px;
+	content: " ";
+	position: absolute;
+	left: 100px;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+.btn-cola.sold-out::after {
+	width: 94px;
+	height: 130px;
+	content: " ";
+	position: absolute;
+	z-index: 10;
+	inset: 0;
+	background: no-repeat center/ 80% url(./src/Sold-out.png);
 }
