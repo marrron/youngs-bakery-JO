@@ -65,6 +65,7 @@ h1 > img {
 	border-radius: 10px;
 	margin-bottom: 12px;
 	padding-bottom: 9px;
+	position: relative;
 }
 .list-cola:hover {
 	outline: solid 3px #ff7d35;
@@ -75,6 +76,7 @@ h1 > img {
 	border: 0;
 	background-color: transparent;
 	padding: 0;
+	cursor: pointer;
 }
 .cola-name {
 	font-size: 11px;
@@ -118,4 +120,5 @@ h1 > img {
 	z-index: 10;
 	inset: 0;
 	background: no-repeat center/ 80% url(./src/Sold-out.png);
+	cursor: not-allowed;
 }
