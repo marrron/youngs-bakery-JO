@@ -20,7 +20,7 @@ h1 > img {
 	height: 510px;
 	background-color: #3f3f3f;
 	border-radius: 10px;
-	padding-top: 13px;
+	padding: 13px 10px 0 10px;
 }
 .left-side {
 	margin-right: 28px;
@@ -45,18 +45,23 @@ h1 > img {
 	background-color: #3f3f3f;
 	border-radius: 10px;
 }
-
 .my-money {
 	width: 306px;
 	height: 32px;
 	background-color: #ffd2b9;
+	padding: 6px 10px 6px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #3f3f3f;
 }
-.purchased-drinks {
+.my-money > span {
+	font-weight: 700;
 }
 .list-menu {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 .list-cola {
 	background-color: white;
@@ -84,6 +89,7 @@ h1 > img {
 	display: block;
 	margin: 3px 0 7px 0;
 	font-weight: 500;
+	color: #3f3f3f;
 }
 .img-cola {
 	width: 36px;
@@ -121,4 +127,145 @@ h1 > img {
 	inset: 0;
 	background: no-repeat center/ 80% url(./src/Sold-out.png);
 	cursor: not-allowed;
+}
+.balance {
+	margin-top: 8px;
+	display: flex;
+	justify-content: space-between;
+}
+.my-balance {
+	width: 200px;
+	height: 32px;
+	background-color: #ffd2b9;
+	border-radius: 5px;
+	padding: 6px 10px 6px 10px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #3f3f3f;
+}
+.btn-change {
+	width: 94px;
+	height: 32px;
+	background-color: #f2f2f2;
+	color: #3f3f3f;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+}
+.deposit {
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+.input-deposit {
+	width: 200px;
+	height: 32px;
+	padding: 6px 0 7px 6px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+}
+input::placeholder {
+	color: #bdbdbd;
+}
+.btn-deposit {
+	width: 94px;
+	height: 32px;
+	background-color: #f2f2f2;
+	color: #3f3f3f;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+}
+.earning {
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+.ul-earning {
+	width: 200px;
+	height: 106px;
+	border-radius: 5px;
+	background-color: #ffd2b9;
+	padding: 12px 18px 0 12px;
+	/* 웹킷 스크롤바 넣을때 이거 있어야 보임 왜인진? 나중에 찾아보기 */
+	overflow-y: scroll;
+}
+.ul-earning::-webkit-scrollbar {
+	width: 10px;
+}
+.ul-earning::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 3px solid transparent;
+}
+.btn-earning {
+	width: 94px;
+	height: 106px;
+	background-color: #ff7d35;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.list-earning {
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 46px;
+	padding: 6px 8px 7px 10px;
+	display: flex;
+	margin-bottom: 6px;
+}
+.earning-cola {
+	font-size: 11px;
+	line-height: 35px;
+}
+.cola-quantity {
+	margin-left: auto;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 16px;
+	vertical-align: baseline;
+}
+.small-cola {
+	width: 18px;
+	height: 33px;
+	margin-right: 10px;
+}
+.my-bag {
+	padding: 24px 27px 0 27px;
+}
+.my-bag > p {
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 8px;
+}
+.purchased-drinks {
+	width: 306px;
+	height: 364px;
+	background-color: #ffd2b9;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 9px;
+}
+.my-bag > span {
+	color: white;
+	font-size: 14px;
+	text-align: right;
+	display: block;
 }

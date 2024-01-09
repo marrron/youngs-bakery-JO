@@ -67,30 +67,50 @@
 						</ul>
 					</div>
 					<div class="balance">
-						<p>잔액: 1,000원</p>
-						<button>거스름돈 반환</button>
+						<p class="my-balance">
+							잔액:
+							<span>1,000원</span>
+						</p>
+						<button class="btn-change">거스름돈 반환</button>
 					</div>
 					<div class="deposit">
-						<input type="number" placeholder="입금액 입력" />
-						<button>입금</button>
+						<input
+							type="number"
+							placeholder="입금액 입력"
+							class="input-deposit"
+						/>
+						<button class="btn-deposit">입금</button>
 					</div>
 					<div class="earning">
-						<ul></ul>
-						<button>획득</button>
+						<ul class="ul-earning">
+							<li class="list-earning">
+								<img src="src/Original_Cola.png" class="small-cola" />
+								<p class="earning-cola">Original_Cola</p>
+								<p class="cola-quantity">1</p>
+							</li>
+							<li class="list-earning">
+								<img src="src/Original_Cola.png" class="small-cola" />
+								<p class="earning-cola">Original_Cola</p>
+								<p class="cola-quantity">1</p>
+							</li>
+						</ul>
+						<button class="btn-earning">획득</button>
 					</div>
 				</div>
 			</div>
 			<div class="right-side">
 				<div class="wallet">
 					<div class="my-money">
-						소지금:
+						소지금 :
 						<span>25,000원</span>
 					</div>
 				</div>
 				<div class="my-bag">
-					획득한 음료
-					<ul class="purchased-drinks"></ul>
-					<span>총금액: 9,000원</span>
+					<p>획득한 음료</p>
+					<ul class="purchased-drinks">
+						<li></li>
+					</ul>
+					<span>총금액 : 9,000원</span>
 				</div>
 			</div>
 		</main>
