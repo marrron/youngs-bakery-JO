@@ -262,6 +262,7 @@ input::placeholder {
 	border-radius: 5px;
 	border: none;
 	margin-bottom: 9px;
+	padding: 12px 12px 18px 12px;
 }
 .my-bag > span {
 	color: white;
