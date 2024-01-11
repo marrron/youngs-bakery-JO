@@ -192,8 +192,7 @@ input::placeholder {
 	height: 106px;
 	border-radius: 5px;
 	background-color: #ffd2b9;
-	padding: 12px 8.4px 0 12px;
-	/* 웹킷 스크롤바 넣을때 이거 있어야 보임 왜인진? 나중에 찾아보기 */
+	padding: 12px 8px 0 12px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }

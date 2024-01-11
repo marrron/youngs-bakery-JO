@@ -120,5 +120,3 @@ btnEarning.addEventListener("click", () => {
 	amount.textContent =
 		"총금액: " + (totalQuantity * 1000).toLocaleString("ko-KR") + "원";
 });
-
-// 5.
