@@ -51,6 +51,7 @@ h1 > img {
 	background-color: #ffd2b9;
 	padding: 6px 10px 6px 10px;
 	display: flex;
+	border-radius: 5px;
 	align-items: center;
 	justify-content: space-between;
 	color: #3f3f3f;
@@ -191,9 +192,10 @@ input::placeholder {
 	height: 106px;
 	border-radius: 5px;
 	background-color: #ffd2b9;
-	padding: 12px 18px 0 12px;
+	padding: 12px 8.4px 0 12px;
 	/* 웹킷 스크롤바 넣을때 이거 있어야 보임 왜인진? 나중에 찾아보기 */
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .ul-earning::-webkit-scrollbar {
 	width: 10px;
@@ -223,6 +225,7 @@ input::placeholder {
 	padding: 6px 8px 7px 10px;
 	display: flex;
 	margin-bottom: 6px;
+	width: 100%;
 }
 .earning-cola {
 	font-size: 11px;
@@ -269,4 +272,24 @@ input::placeholder {
 	font-size: 14px;
 	text-align: right;
 	display: block;
+}
+@media (max-width: 360px) {
+	body {
+		background-color: #3f3f3f;
+	}
+	h1 > img {
+		display: none;
+	}
+	h1 {
+		width: 186px;
+		height: 97px;
+		display: block;
+		margin: 0 auto;
+		background-image: url("src/Mobile_Logo.png");
+		background-size: cover;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 }

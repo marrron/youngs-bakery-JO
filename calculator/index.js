@@ -25,3 +25,5 @@ function calculateResult() {
 function clearResult() {
 	input.value = "0";
 }
+
+document.getElementById;
