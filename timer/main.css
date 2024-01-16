@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	font-family: "Black Han Sans", sans-serif;
+}
+body {
+	background-image: url("src/main-bg.svg");
+}
+.logo > img {
+	display: block;
+	margin: 66px auto 86.24px;
+}
+.main-box {
+	position: relative;
+}
+.img-main-box-top {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.side-face {
+	width: 168px;
+	height: 369.05px;
+	background-color: #92cd5f;
+	transform: translate(-242%, 29%) skewY(38.5deg);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.timer {
+	width: 648.79px;
+	height: 369.05px;
+	background-color: #7abc49;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-37%, 47%);
+}
