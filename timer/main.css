@@ -38,3 +38,109 @@ body {
 	top: 50%;
 	transform: translate(-37%, 47%);
 }
+.logo-timer {
+	display: flex;
+	position: absolute;
+	transform: translate(-300%, -30%);
+	left: 50%;
+	top: 50%;
+	z-index: 10;
+}
+.time {
+	display: flex;
+	padding: 27px 79.79px 53.05px 81px;
+}
+input {
+	width: 130px;
+	height: 130px;
+	border-radius: 10px;
+	border: 5px #fff solid;
+	background: transparent;
+	margin-top: 9px;
+	color: #fff;
+	text-align: center;
+	font-size: 85px;
+}
+input:focus {
+	outline: none;
+}
+/* number 화살표 없애는 코드 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.txt-hrs,
+.txt-min,
+.txt-sec {
+	text-align: center;
+	color: #fbf23b;
+	font-size: 21px;
+	font-weight: 600;
+	position: relative;
+}
+.txt-hrs::after {
+	display: block;
+	width: 9px;
+	height: 9px;
+	background-color: #fbf23b;
+	border-radius: 50px;
+	content: "";
+	position: absolute;
+	top: 75px;
+	left: 158px;
+}
+.txt-hrs::before {
+	display: block;
+	width: 9px;
+	height: 9px;
+	background-color: #fbf23b;
+	border-radius: 50px;
+	content: "";
+	position: absolute;
+	top: 105px;
+	left: 158px;
+}
+.txt-min::after {
+	display: block;
+	width: 9px;
+	height: 9px;
+	background-color: #fbf23b;
+	border-radius: 50px;
+	content: "";
+	position: absolute;
+	top: 75px;
+	left: 158px;
+}
+.txt-min::before {
+	display: block;
+	width: 9px;
+	height: 9px;
+	background-color: #fbf23b;
+	border-radius: 50px;
+	content: "";
+	position: absolute;
+	top: 105px;
+	left: 158px;
+}
+button {
+	width: 171px;
+	height: 78px;
+	background-color: #69a13f;
+	border: none;
+	border-radius: 50px;
+	font-size: 20px;
+	color: #568037;
+}
+
+.btn-start {
+	margin-right: 57px;
+}
+.button-set {
+	display: flex;
+	padding: 0px 0px 0px 126px;
+}
+button > img {
+	margin-right: 5px;
+	vertical-align: middle;
+}

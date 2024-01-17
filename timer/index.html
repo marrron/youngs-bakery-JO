@@ -16,13 +16,58 @@
 	<body>
 		<div class="wrapper">
 			<h1 class="logo"><img src="src/Logo.svg" alt="" /></h1>
+			<img src="src/logo-TIMER.svg" alt="" class="logo-timer" />
 			<div class="main-box">
 				<div class="img-main-box-top">
 					<img src="src/main-box-top.svg" alt="" />
 				</div>
 				<div class="side-face"></div>
-				<div class="timer"></div>
+				<div class="timer">
+					<div class="time">
+						<p class="txt-hrs">
+							HRS
+							<input
+								type="number"
+								class="inp-hrs"
+								value="00"
+								min="0"
+								max="59"
+							/>
+						</p>
+						<p class="txt-min">
+							MIN
+							<input
+								type="number"
+								class="inp-min"
+								value="00"
+								min="0"
+								max="59"
+							/>
+						</p>
+						<p class="txt-sec">
+							SEC
+							<input
+								type="number"
+								class="inp-sec"
+								value="00"
+								min="0"
+								max="59"
+							/>
+						</p>
+					</div>
+					<div class="button-set">
+						<button class="btn-start">
+							<img src="src/start-button-disabled.svg" alt="" />
+							<span class="txt-start">START</span>
+						</button>
+						<button class="btn-reset">
+							<img src="src/reset-button-disabled.svg" alt="" />
+							<span class="txt-reset">RESET</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
