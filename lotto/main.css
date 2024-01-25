@@ -1,9 +1,15 @@
 * {
 	box-sizing: border-box;
+	font-family: "Noto Serif KR", serif;
+	font-weight: 700;
 }
 body {
 	font-family: "Noto Serif KR", serif;
+	font-weight: 700;
 	background-color: #ffff00;
+	display: flex;
+	height: 100%;
+	overflow: hidden;
 }
 .left-side {
 	padding: 60px 0 0 105px;
@@ -13,10 +19,259 @@ body {
 	font-weight: 900;
 	font-size: 50px;
 }
+.right-side {
+	padding: 45px 130px 32px 51px;
+}
+.lotto {
+	display: flex;
+	align-items: flex-end;
+}
 .bok {
-	color: white;
 	background-color: #ff0000;
 	width: 157px;
 	height: 190px;
-	clip-path: ellipse(157px 190px);
+	/* 오 width랑 height 반반씩 하면 원하는 타원이 나옴 */
+	clip-path: ellipse(78px 95px);
+	display: flex;
+	position: relative;
+}
+.bok > span {
+	color: white;
+	font-size: 120px;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+.kwon {
+	background-color: #ff0000;
+	width: 75px;
+	height: 90px;
+	clip-path: ellipse(37.5px 45px);
+	display: flex;
+	position: relative;
+}
+.kwon > span {
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	top: 17px;
+	left: 13px;
+}
+.lotto > p {
+	font-size: 120px;
+	padding-left: 26px;
+}
+.purchase-side {
+	padding: 33px 0 0 79px;
+}
+.purchase {
+	font-size: 50px;
+}
+.btn {
+	margin-top: 12px;
+	margin-bottom: 14px;
+}
+.btn > button {
+	width: 129px;
+	height: 46px;
+	background-color: #004bff;
+	border: none;
+	border-radius: 30px;
+	font-size: 25px;
+	color: white;
+	margin-right: 18px;
+	cursor: pointer;
+}
+.input-side > input {
+	width: 600px;
+	height: 80px;
+	border: none;
+	font-size: 40px;
+	padding: 18px 0 14px 27px;
+}
+input::placeholder {
+	color: #878787;
+	font-size: 40px;
+	font-family: "Noto Serif KR", serif;
+}
+.input-side > button {
+	width: 100px;
+	height: 80px;
+	background-color: #004bff;
+	color: white;
+	font-size: 40px;
+	border: none;
+	border-radius: 10px;
+	margin-left: 44px;
+	cursor: pointer;
+}
+.check-side {
+	margin-top: 46px;
+	font-size: 40px;
+	margin-bottom: 29px;
+}
+.check-side > span:nth-child(2) {
+	margin-left: 185px;
+	color: #004bff;
+}
+.bok-side {
+	margin-bottom: 10px;
+}
+.bok-side > img {
+	margin-right: 15px;
+}
+.number-wrap {
+	width: 485px;
+	font-size: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 170px solid transparent;
+	border-right: 170px solid transparent;
+	border-bottom: 220px solid #004bff;
+	position: relative;
+	transform: rotate(-10deg);
+}
+.triangle::after {
+	width: 0;
+	height: 0;
+	border-left: 170px solid transparent;
+	border-right: 170px solid transparent;
+	border-top: 220px solid #004bff;
+	position: absolute;
+	content: "";
+	top: 50px;
+	left: -170px;
+}
+.right-side > p:nth-child(1) {
+	color: white;
+	position: absolute;
+	font-size: 65px;
+	z-index: 10;
+	top: 110px;
+	left: 1210px;
+}
+.red-side {
+	width: 580px;
+	height: 800px;
+	background-color: #ff0000;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	position: absolute;
+	top: 147px;
+	left: 1200px;
+	z-index: -5;
+}
+.winning-number {
+	padding: 120px 70px;
+}
+.winning-number > p:nth-child(1) {
+	font-size: 65px;
+	margin-left: 100px;
+	margin-bottom: 35px;
+}
+.winning {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.winning > div {
+	width: 130px;
+	height: 140px;
+	background-color: white;
+	margin-bottom: 25px;
+	border-radius: 10px;
+}
+.bonus-number {
+	font-size: 65px;
+	margin-left: 70px;
+}
+.bonus {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.bonus > div:nth-child(1) {
+	width: 130px;
+	height: 140px;
+	border-radius: 50%;
+	background-color: white;
+}
+.button-wrap {
+	display: flex;
+	flex-direction: column;
+}
+.button-wrap > button {
+	width: 245px;
+	height: 70px;
+	background-color: #004bff;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 28px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.modal {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 20;
+}
+.modal > div {
+	width: 580px;
+	height: 900px;
+	margin: 50px auto;
+	background-color: #ff0000;
+	padding: 100px 54px 40px 54px;
+}
+h2 {
+	font-size: 60px;
+	color: white;
+	margin-bottom: 74px;
+	margin-left: 55px;
+}
+h2 > span {
+	font-size: 60px;
+	color: #ffff00;
+}
+table {
+	color: white;
+	font-size: 20px;
+	width: 100%;
+	border-top: 2px solid white;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+td,
+th {
+	border-bottom: 2px solid white;
+	padding: 20px;
+}
+.modal > div > p {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.modal > div > button {
+	width: 300px;
+	height: 80px;
+	background-color: #004bff;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 40px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	margin-left: 86px;
 }
