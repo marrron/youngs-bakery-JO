@@ -106,25 +106,92 @@ input::placeholder {
 	cursor: pointer;
 }
 .check-side {
+	width: 745px;
 	margin-top: 46px;
 	font-size: 40px;
 	margin-bottom: 29px;
+	display: flex;
+	justify-content: space-between;
 }
 .check-side > span:nth-child(2) {
-	margin-left: 185px;
 	color: #004bff;
 }
 .bok-side {
 	margin-bottom: 10px;
-}
-.bok-side > img {
-	margin-right: 15px;
-}
-.number-wrap {
-	width: 485px;
-	font-size: 60px;
+	width: 745px;
 	display: flex;
 	justify-content: space-between;
+}
+.bok-side > .img-wrap > img {
+	margin-right: 15px;
+}
+/* 퍼옴~ */
+.toggle {
+	position: relative;
+}
+.toggle > input {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	z-index: -1;
+	position: absolute;
+	right: 6px;
+	top: -8px;
+	display: block;
+	margin: 0;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	outline: none;
+	opacity: 0;
+	transform: scale(1);
+	pointer-events: none;
+	transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+.toggle > span {
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+}
+.toggle > span::before {
+	content: "";
+	/* float: right; */
+	display: inline-block;
+	margin: 5px 0 5px 10px;
+	border-radius: 7px;
+	width: 36px;
+	height: 14px;
+	background-color: rgba(0, 0, 0, 0.38);
+	vertical-align: top;
+	transition: background-color 0.2s, opacity 0.2s;
+}
+.toggle > span::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	right: 16px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+		0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	transition: background-color 0.2s, transform 0.2s;
+}
+.toggle > input:checked + span::before {
+	background-color: rgba(0, 0, 0, 0.38);
+}
+.toggle > input:checked + span::after {
+	background-color: #004bff;
+	transform: translateX(16px);
+}
+/* ~퍼옴 */
+.number-wrap {
+	width: 485px;
+	font-size: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 .triangle {
 	width: 0;
@@ -164,7 +231,7 @@ input::placeholder {
 	position: absolute;
 	top: 147px;
 	left: 1200px;
-	z-index: -5;
+	z-index: -1;
 }
 .winning-number {
 	padding: 120px 70px;
@@ -186,9 +253,21 @@ input::placeholder {
 	margin-bottom: 25px;
 	border-radius: 10px;
 }
+.winning > div > p {
+	color: black;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 25px;
+}
 .bonus-number {
 	font-size: 65px;
 	margin-left: 70px;
+}
+.bonus > div > p {
+	color: black;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 25px;
 }
 .bonus {
 	display: flex;
@@ -205,7 +284,8 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 }
-.button-wrap > button {
+.auto-result,
+.result {
 	width: 245px;
 	height: 70px;
 	background-color: #004bff;
@@ -215,6 +295,8 @@ input::placeholder {
 	font-size: 28px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	z-index: 100;
+	position: relative;
 }
 .modal {
 	position: absolute;
@@ -230,7 +312,7 @@ input::placeholder {
 .modal > div {
 	width: 580px;
 	height: 900px;
-	margin: 50px auto;
+	margin: 100px auto;
 	background-color: #ff0000;
 	padding: 100px 54px 40px 54px;
 }
@@ -250,7 +332,7 @@ table {
 	width: 100%;
 	border-top: 2px solid white;
 	border-collapse: collapse;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 td,
 th {
@@ -261,7 +343,7 @@ th {
 	color: white;
 	font-size: 25px;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .modal > div > button {
 	width: 300px;
@@ -271,7 +353,6 @@ th {
 	border: none;
 	border-radius: 10px;
 	font-size: 40px;
-	margin-bottom: 10px;
 	cursor: pointer;
 	margin-left: 86px;
 }

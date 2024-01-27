@@ -34,24 +34,21 @@
 					<button>입력</button>
 				</div>
 				<div class="check-side">
-					<span>총 n개를 구매하였습니다</span>
+					<span>총 0개를 구매하였습니다</span>
 					<span>번호확인</span>
 				</div>
 				<div class="bok-side">
-					<img src="src/bok.svg" alt="" />
-					<img src="src/bok.svg" alt="" />
-					<img src="src/bok.svg" alt="" />
-					<img src="src/bok.svg" alt="" />
-					<img src="src/bok.svg" alt="" />
-					<button type="radio"></button>
-				</div>
-				<div class="number-wrap">
-					<p>4</p>
-					<p>10</p>
-					<p>15</p>
-					<p>23</p>
-					<p>41</p>
-					<p>42</p>
+					<div class="img-wrap">
+						<img src="src/bok.svg" alt="" />
+						<img src="src/bok.svg" alt="" />
+						<img src="src/bok.svg" alt="" />
+						<img src="src/bok.svg" alt="" />
+						<img src="src/bok.svg" alt="" />
+					</div>
+					<label class="toggle">
+						<input type="checkbox" class="toggle-btn" />
+						<span></span>
+					</label>
 				</div>
 			</div>
 		</div>
@@ -62,18 +59,18 @@
 				<div class="winning-number">
 					<p>당첨번호</p>
 					<div class="winning">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
+						<div><p></p></div>
+						<div><p></p></div>
+						<div><p></p></div>
+						<div><p></p></div>
+						<div><p></p></div>
+						<div><p></p></div>
 					</div>
 					<p class="bonus-number">뽀나스번호</p>
 					<div class="bonus">
-						<div></div>
+						<div><p></p></div>
 						<div class="button-wrap">
-							<button>당첨 번호 자동입력</button>
+							<button class="auto-result">당첨 번호 자동입력</button>
 							<button class="result">결과 확인하기</button>
 						</div>
 					</div>
@@ -125,8 +122,8 @@
 						</tr>
 					</tbody>
 				</table>
-				<p>당신의 총 수익률은 -100.00%입니다.</p>
-				<button>다시 시작하기</button>
+				<p class="rate-of-return">당신의 총 수익률은 -100.00%입니다.</p>
+				<button class="restart">다시 시작하기</button>
 			</div>
 		</dialog>
 		<script src="index.js">
