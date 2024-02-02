@@ -1,0 +1,61 @@
+body {
+	background-color: #b0b0b0;
+}
+.canvas {
+	width: 700px;
+	height: 700px;
+	background-color: #fff;
+	margin: 100px auto 30px;
+}
+.tools {
+	width: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+button {
+	margin-right: 15px;
+}
+.palette {
+	width: 303px;
+	height: 30px;
+	background-color: #e2e2e2;
+	margin: 15px 0 0 610px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 4px;
+}
+.palette > div {
+	width: 28px;
+	height: 27px;
+	border-top: #000 solid 2px;
+	border-left: #000 solid 2px;
+}
+.black {
+	background-color: #000;
+}
+.white {
+	background-color: #fff;
+}
+.gray {
+	background-color: #afafaf;
+}
+.red {
+	background-color: #f80406;
+}
+.yellow {
+	background-color: #fefe00;
+}
+.green {
+	background-color: #25fe01;
+}
+.cyan {
+	background-color: #2efefe;
+}
+.blue {
+	background-color: #1a01fe;
+}
+.magenta {
+	background-color: #fb02fe;
+}
