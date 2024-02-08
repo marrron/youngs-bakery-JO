@@ -1,15 +1,18 @@
 body {
 	background-color: #b0b0b0;
 }
+.wrapper {
+	width: 700px;
+	margin: 100px auto 30px;
+}
 .canvas {
 	width: 700px;
 	height: 700px;
 	background-color: #fff;
-	margin: 100px auto 30px;
 }
 .tools {
-	width: 700px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 30px auto 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -20,7 +23,7 @@ button {
 	width: 303px;
 	height: 30px;
 	background-color: #e2e2e2;
-	margin: 15px 0 0 610px;
+	margin: 15px 0 0 0;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
