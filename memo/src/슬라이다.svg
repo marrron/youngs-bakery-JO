@@ -1,0 +1,32 @@
+<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="45" height="45" fill="#C5C8CC"/>
+<rect x="2" y="2" width="41" height="4" fill="#000073"/>
+<rect x="34" y="3" width="2" height="2" fill="#C5C8CC"/>
+<rect x="37" y="3" width="2" height="2" fill="#C5C8CC"/>
+<rect x="40" y="3" width="2" height="2" fill="#C5C8CC"/>
+<rect x="4" y="9" width="37" height="31" fill="#01B5F2"/>
+<path d="M10.3171 21L4 26.2778V40H41V30.5L33.3293 26.2778L29.7195 33.1389L21.5976 27.3333L19.3415 29.9722L10.3171 21Z" fill="#91C300"/>
+<ellipse cx="31.0125" cy="18" rx="4.0383" ry="3.91304" fill="url(#paint0_linear_419_1681)"/>
+<path d="M30.9229 12L30.9229 13.3913" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M30.9229 22.6087L30.9229 24" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M26.4221 16.8876L25 16.6956" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M37 16.5217L35.5893 16.781" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M33.974 14.2832L34.8969 13.2174" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M26.9742 13.3913L27.8972 14.4571" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M28.2008 21.7392L27.3333 22.8479" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M33.7946 21.7392L34.6781 22.8359" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M26.5155 19.4745L25.1148 19.7805" stroke="#EEB849" stroke-linecap="round"/>
+<path d="M35.6031 19.4265L36.9784 19.8263" stroke="#EEB849" stroke-linecap="round"/>
+<circle cx="4" cy="25" r="3" fill="#D9D9D9"/>
+<circle cx="41" cy="25" r="3" fill="#D9D9D9"/>
+<path d="M2.80005 25.0311L4.56685 26.477" stroke="black" stroke-linecap="round"/>
+<path d="M2.91907 24.931L4.68111 23.5543" stroke="black" stroke-linecap="round"/>
+<path d="M42.1 25.034L40.3332 26.48" stroke="black" stroke-linecap="round"/>
+<path d="M41.981 24.9339L40.2189 23.5572" stroke="black" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_419_1681" x1="34.0637" y1="15.3913" x2="27.814" y2="22.1098" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EFBD4A"/>
+<stop offset="1" stop-color="#E89A43"/>
+</linearGradient>
+</defs>
+</svg>
