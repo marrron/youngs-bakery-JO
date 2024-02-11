@@ -3,7 +3,100 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="reset.css" />
 		<title>Memo</title>
 	</head>
-	<body></body>
+	<body>
+		<h1 class="title">메모장</h1>
+		<div class="wrapper">
+			<div class="navbar">
+				<ul>
+					<li>
+						<img src="src/clock.svg" alt="" />
+						<p>시계</p>
+					</li>
+					<li>
+						<img src="src/sun.svg" alt="" />
+						<p>날씨</p>
+					</li>
+					<li>
+						<img src="src/calendar.svg" alt="" />
+						<p>달력</p>
+					</li>
+					<li>
+						<img src="src/그림판.svg" alt="" />
+						<p>그림판</p>
+					</li>
+					<li>
+						<img src="src/슬라이다.svg" alt="" />
+						<p>슬라이다</p>
+					</li>
+				</ul>
+			</div>
+			<div class="app">
+				<div class="clock-analog">
+					<div class="top-bar">
+						시계
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+				<div class="calendar">
+					<div class="top-bar">
+						달력
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+				<div class="clock-digital">
+					<div class="top-bar">
+						시계
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+				<div class="canvas">
+					<div class="top-bar">
+						그림판
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+				<div class="slider">
+					<div class="top-bar">
+						슬라이다
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+				<div class="weather">
+					<div class="top-bar">
+						날씨
+						<div>
+							<img src="src/물음표버튼.svg" alt="" />
+							<img src="src/x버튼.svg" alt="" />
+						</div>
+					</div>
+					<div class="content"></div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
