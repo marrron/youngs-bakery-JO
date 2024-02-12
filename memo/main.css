@@ -124,3 +124,21 @@ ul > li > img {
 	top: 623px;
 	left: 99px;
 }
+.weather > .content {
+	display: flex;
+	padding: 30px 30px 30px 40px;
+}
+.weather > .content > div {
+	margin-left: 60px;
+	margin-top: 10px;
+}
+.location {
+	color: #000;
+	font-size: 30px;
+	text-align: center;
+}
+.temperature {
+	color: #000;
+	font-size: 40px;
+	margin-top: 10px;
+}
