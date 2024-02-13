@@ -2,6 +2,7 @@ const lineWidth = document.querySelector(".brush-size");
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const colors = document.querySelectorAll(".palette");
+const eraser = document.querySelector(".btn-erase");
 
 canvas.width = 700;
 canvas.height = 700;
@@ -57,10 +58,16 @@ function saveCanvas() {
 	}
 }
 
+function onEraseClick() {
+	ctx.fillStyle = "white";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
 canvas.addEventListener("mousemove", onMove);
 canvas.addEventListener("mousedown", startPainting);
 canvas.addEventListener("mouseup", cancelPainting);
 canvas.addEventListener("mouseleave", cancelPainting);
+eraser.addEventListener("click", onEraseClick);
 
 lineWidth.addEventListener("change", onLineWidthChange);
 colors.forEach((color) => color.addEventListener("click", changeColor));
