@@ -1,3 +1,4 @@
+/* 공통 */
 @font-face {
 	font-family: "DungGeunMo";
 	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
@@ -7,10 +8,10 @@
 }
 * {
 	box-sizing: border-box;
+	color: #fff;
 }
 body {
 	background-color: #000;
-	color: #fff;
 }
 .wrapper {
 	display: flex;
@@ -65,10 +66,14 @@ ul > li > img {
 	float: left;
 	margin-left: 3px;
 }
+
+/* 아날로그 시계 */
 .clock-analog {
 	width: 453px;
 	height: 371px;
 }
+
+/* 달력 */
 .calendar {
 	width: 756px;
 	height: 366px;
@@ -76,6 +81,8 @@ ul > li > img {
 	left: 659px;
 	top: 35px;
 }
+
+/* 디지털시계 */
 .clock-digital {
 	width: 453px;
 	height: 198px;
@@ -91,18 +98,21 @@ ul > li > img {
 	border-right: 2px #000 solid;
 	border-bottom: 2px #000 solid;
 	margin: 11px auto;
-	color: #000;
 }
 .time {
 	font-size: 80px;
 	text-align: center;
 	margin-top: 10px;
+	color: #000;
 }
 .date {
 	font-size: 25px;
 	text-align: center;
 	margin-top: 5px;
+	color: #000;
 }
+
+/* 그림판 */
 .canvas {
 	width: 453px;
 	height: 421px;
@@ -110,6 +120,56 @@ ul > li > img {
 	left: 659px;
 	top: 426px;
 }
+.canvas > .content {
+	width: 290px;
+	height: 290px;
+	background-color: #fff;
+	margin: 20px auto;
+}
+.palette {
+	width: 130px;
+	height: 17px;
+	background-color: #e2e2e2;
+	margin: 15px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+}
+.palette > div {
+	width: 12px;
+	height: 12px;
+	border-top: #000 solid 1px;
+	border-left: #000 solid 1px;
+}
+.black {
+	background-color: #000;
+}
+.white {
+	background-color: #fff;
+}
+.gray {
+	background-color: #afafaf;
+}
+.red {
+	background-color: #f80406;
+}
+.yellow {
+	background-color: #fefe00;
+}
+.green {
+	background-color: #25fe01;
+}
+.cyan {
+	background-color: #2efefe;
+}
+.blue {
+	background-color: #1a01fe;
+}
+.magenta {
+	background-color: #fb02fe;
+}
+
+/* 슬라이더 */
 .slider {
 	width: 420px;
 	height: 421px;
@@ -117,6 +177,8 @@ ul > li > img {
 	left: 1151px;
 	top: 374px;
 }
+
+/* 날씨 */
 .weather {
 	width: 453px;
 	height: 224px;
