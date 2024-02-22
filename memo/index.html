@@ -44,7 +44,11 @@
 							<img src="src/x버튼.svg" alt="" />
 						</div>
 					</div>
-					<div class="content"></div>
+					<div class="content">
+						<div class="hand hour-hand"></div>
+						<div class="hand minute-hand"></div>
+						<div class="hand second-hand"></div>
+					</div>
 				</div>
 				<div class="calendar">
 					<div class="top-bar">
@@ -54,7 +58,24 @@
 							<img src="src/x버튼.svg" alt="" />
 						</div>
 					</div>
-					<div class="content"></div>
+					<div class="content">
+						<div class="month">
+							<button class="prev-month">◀</button>
+							<p>2024, July</p>
+							<button class="next-month">▶</button>
+						</div>
+						<table class="days">
+							<tr>
+								<th>Sun</th>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+							</tr>
+						</table>
+					</div>
 				</div>
 				<div class="clock-digital">
 					<div class="top-bar">
@@ -78,7 +99,7 @@
 						</div>
 					</div>
 					<div class="content">
-						<canvas class="canvas"></canvas>
+						<canvas></canvas>
 						<div class="tools">
 							<div class="buttons">
 								<button class="btn-fill">Fill</button>
@@ -91,7 +112,7 @@
 								min="1"
 								max="10"
 								value="5"
-								style="width: 262px"
+								style="width: 100px"
 							/>
 						</div>
 						<div class="palette">
@@ -115,7 +136,19 @@
 							<img src="src/x버튼.svg" alt="" />
 						</div>
 					</div>
-					<div class="content"></div>
+					<div class="content">
+						<ul class="slides">
+							<li><img src="src/slide1.png" alt="" /></li>
+							<li><img src="src/slide2.png" alt="" /></li>
+							<li><img src="src/slide3.png" alt="" /></li>
+							<li><img src="src/slide4.png" alt="" /></li>
+							<li><img src="src/slide5.png" alt="" /></li>
+						</ul>
+						<div class="control">
+							<button class="prev">&lang;</button>
+							<button class="next">&rang;</button>
+						</div>
+					</div>
 				</div>
 				<div class="weather">
 					<div class="top-bar">
@@ -126,10 +159,10 @@
 						</div>
 					</div>
 					<div class="content">
-						<img src="src/맑음.svg" alt="" />
+						<img class="img-weather" alt="" />
 						<div>
-							<p class="location">Ansan</p>
-							<p class="temperature">28° / 33°</p>
+							<p class="location"></p>
+							<p class="temperature"></p>
 						</div>
 					</div>
 				</div>
