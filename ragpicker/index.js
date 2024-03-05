@@ -31,7 +31,7 @@ function startStepCounting() {
 
 // 걸음 수 출력
 function displayStepCount() {
-	document.getElementById("stepCount").textContent = "걸음수: " + stepCount;
+	document.querySelector(".stepcount").textContent = "" + stepCount;
 }
 
 // 걸음 수 측정 시작
