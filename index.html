@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YOUNGMARKET</title>
+		<style>
+			body {
+				background: #f4e1ca url("./images/bg-tray.svg") no-repeat top;
+			}
+
+			h1 {
+				text-align: center;
+				padding: 10px 0 25px 0;
+				transform: translateX(-2%);
+			}
+
+			li {
+				list-style: none;
+			}
+
+			button {
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+
+			.breads {
+				position: relative;
+			}
+
+			.bread_calculator,
+			.bread_lotto,
+			.bread_timer,
+			.bread_youngsmarket,
+			.bread_vendingmachine,
+			.bread_memo {
+				position: absolute;
+			}
+
+			.bread_calculator {
+				top: 0;
+				left: 35%;
+				transform: translateY(-100px);
+			}
+
+			.bread_vendingmachine {
+				top: 0;
+				left: 50%;
+				transform: translateY(-30px);
+			}
+
+			.bread_timer {
+				top: 0;
+				left: 65%;
+				transform: translateY(40px);
+			}
+
+			.bread_lotto {
+				top: 0;
+				left: 25%;
+				transform: translateY(105px);
+			}
+
+			.bread_memo {
+				top: 0;
+				left: 39%;
+				transform: translateY(200px);
+				z-index: 100;
+			}
+
+			.bread_youngsmarket {
+				top: 0;
+				left: 54%;
+				transform: translateY(265px);
+			}
+
+			.tongs {
+				position: absolute;
+				/* transition: transform 0.1s ease; */
+				z-index: 100;
+			}
+		</style>
+	</head>
+	<body>
+		<h1><img src="./images/main-logo.svg" alt="로고" /></h1>
+		<div class="container">
+			<ul class="breads">
+				<li class="bread_calculator">
+					<a href="https://marrron.github.io/youngs-bakery-JO/calculator/"
+						><button type="button">
+							<img src="./images/bread_calculator.svg" alt="계산기" /></button
+					></a>
+				</li>
+				<li class="bread_memo">
+					<a href="https://marrron.github.io/youngs-bakery-JO/memo/"
+						><button type="button">
+							<img src="./images/bread_memo.svg" alt="메모장" /></button
+					></a>
+				</li>
+
+				<li class="bread_lotto">
+					<a href="https://marrron.github.io/youngs-bakery-JO/lotto/"
+						><button type="button">
+							<img src="./images/bread_lotto.svg" alt="로또" /></button
+					></a>
+				</li>
+				<li class="bread_vendingmachine">
+					<a href="https://marrron.github.io/youngs-bakery-JO/vending-machine/"
+						><button type="button">
+							<img
+								src="./images/bread_vendingmachine.svg"
+								alt="자판기"
+							/></button
+					></a>
+				</li>
+				<li class="bread_timer">
+					<a href="https://marrron.github.io/youngs-bakery-JO/timer/"
+						><button type="button">
+							<img src="./images/bread_timer.svg" alt="타이머" /></button
+					></a>
+				</li>
+				<li class="bread_youngsmarket">
+					<a href=""
+						><button type="button">
+							<img
+								src="./images/bread_youngsmarket.svg"
+								alt="영스마켓"
+							/></button
+					></a>
+				</li>
+			</ul>
+			<img class="tongs" src="./images/tongs.svg" alt="tongs" />
+		</div>
+		<script>
+			document.addEventListener("mousemove", function (event) {
+				const tongs = document.querySelector(".tongs");
+				const x = event.clientX;
+				const y = event.clientY;
+				tongs.style.transform = `translate(${x - 100}px, ${y - 350}px)`;
+			});
+
+			document
+				.querySelector(".tongs")
+				.addEventListener("click", function (event) {
+					const tongs = document.querySelector(".tongs");
+					const x = event.clientX;
+					const y = event.clientY;
+
+					const liElements = document.querySelectorAll(".breads li");
+					tongs.src = "./images/tongs_active.svg";
+
+					liElements.forEach((li) => {
+						const rect = li.getBoundingClientRect();
+						console.log(rect, x, y);
+						if (
+							x >= rect.left &&
+							x <= rect.right &&
+							y >= rect.top &&
+							y <= rect.bottom
+						) {
+							const link = li.querySelector("a");
+							if (link) {
+								setTimeout(() => {
+									link.click();
+								}, 300);
+							}
+						}
+					});
+				});
+		</script>
+	</body>
+</html>
